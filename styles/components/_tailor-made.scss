@@ -1,0 +1,30 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+#tailor-made{
+    @include mixins.margem-central(85%);
+    .tailor-made-texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            @include mixins.fw-fs-c(700, 3rem, variaveis.$cor-titulo);
+        }
+        p{
+            @include mixins.fw-fs-c(400, 1.125rem, variaveis.$cor-texto);
+            width: 55%;
+        }
+    }
+    .container-tailor-made{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        .tailor-made-itens{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+        }
+    }
+}

@@ -65,7 +65,7 @@ nav #badges {
 }
 
 #brand-logos {
-  padding-top: 4rem;
+  padding: 4rem 0;
 }
 #brand-logos ul {
   list-style: none;
@@ -73,6 +73,39 @@ nav #badges {
   gap: 64px;
   justify-content: center;
   align-items: center;
+}
+
+#tailor-made {
+  margin: 0 auto;
+  width: 85%;
+}
+#tailor-made .tailor-made-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#tailor-made .tailor-made-texto h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #111827;
+}
+#tailor-made .tailor-made-texto p {
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #374151;
+  width: 55%;
+}
+#tailor-made .container-tailor-made {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+#tailor-made .container-tailor-made .tailor-made-itens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
 }
 
 body {
