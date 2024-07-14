@@ -1,0 +1,38 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+#home{
+    padding-top: 5rem;
+    display: flex;
+    @include mixins.margem-central(85%);
+    .texto-home{
+        padding-top: 4rem;
+        h1{
+            @include mixins.fw-fs-c(700, 4.5rem, variaveis.$cor-titulo);
+        }
+        p{
+            @include mixins.fw-fs-c(400, 1.125rem, variaveis.$cor-texto);
+            width: 80%;
+        }
+        .btn-home{
+            display: flex;
+            #get-started{
+                background-color: variaveis.$cor-btn;
+                border: 0;
+                border-radius: 8px;
+                color: #fff;
+                padding: 1rem 1.5rem;
+                font-family: variaveis.$fonte-principal;
+                @include mixins.fw-fs-c(500, 1rem, #fff);
+            }
+            #watch-video{
+                @extend #get-started;
+                background-color: #fff;
+                color: variaveis.$cor-btn;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+    }
+}

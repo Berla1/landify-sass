@@ -1,0 +1,13 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+#brand-logos{
+    padding-top: 4rem;
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 64px;
+        justify-content: center;
+        align-items: center;
+    }
+}
