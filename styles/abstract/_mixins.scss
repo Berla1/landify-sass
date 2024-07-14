@@ -1,0 +1,10 @@
+@mixin fw-fs-c($font-weight, $font-size, $color){
+    font-weight: $font-weight;
+    font-size: $font-size;
+    color: $color;
+}
+
+@mixin margem-central($width){
+    margin: 0 auto;
+    width: $width;
+}

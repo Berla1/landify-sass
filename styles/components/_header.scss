@@ -1,0 +1,20 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+nav{
+    @include mixins.margem-central(90%);
+    display: flex;
+    justify-content: space-between;
+    ul{
+        #logo{
+            padding: 1rem 1.5rem;
+        }
+        display: flex; 
+        align-items: center;
+        list-style: none;
+        gap: 16px;
+    }
+        @include mixins.fw-fs-c(700, 1rem, variaveis.$cor-titulo);
+        #badges{
+            display: flex;
+        }
+}
