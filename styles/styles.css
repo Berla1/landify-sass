@@ -1,5 +1,11 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-nav {
+.background {
+  background-image: url(../../assets/branckground.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background nav {
   margin: 0 auto;
   width: 90%;
   display: flex;
@@ -8,16 +14,16 @@ nav {
   font-size: 1rem;
   color: #111827;
 }
-nav ul {
+.background nav ul {
   display: flex;
   align-items: center;
   list-style: none;
   gap: 16px;
 }
-nav ul #logo {
+.background nav ul #logo {
   padding: 1rem 1.5rem 0 0;
 }
-nav #badges {
+.background nav #badges {
   display: flex;
   gap: 12px;
 }
@@ -96,6 +102,7 @@ nav #badges {
   width: 55%;
 }
 #tailor-made .container-tailor-made {
+  padding: 5rem 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -106,6 +113,95 @@ nav #badges {
   flex-direction: column;
   align-items: center;
   width: 30%;
+}
+
+#costumers {
+  background-color: #D5FAFC;
+  background-image: url(../../assets/quote.svg);
+  background-repeat: no-repeat;
+  background-position: 6.5% 8%; /* 6.5% à direita e 8% abaixo */
+  padding: 4.5rem 0;
+}
+#costumers .customers-texto {
+  margin: 0 auto;
+  width: 75%;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+}
+#costumers .customers-texto h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #111827;
+  width: 60%;
+  margin: 0;
+}
+#costumers .customers-texto h4 {
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #111827;
+}
+#costumers .cards {
+  margin: 0 auto;
+  width: 75%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+#costumers .cards .card-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+#costumers .cards .card-vertical #airbnb {
+  width: 50%;
+}
+#costumers .cards .card-vertical #strapi {
+  width: 40%;
+}
+#costumers .cards .card {
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 2.2rem;
+}
+#costumers .cards .card .card-texto img {
+  width: 30px;
+}
+#costumers .cards .card img {
+  width: 100px;
+}
+#costumers .cards .card h2 {
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #111827;
+  line-height: 28px;
+  margin: 0;
+  padding: 2rem 0;
+}
+#costumers .cards .card h3 {
+  margin: 0;
+  padding-left: 2rem;
+}
+#costumers .cards .card h5 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #6B7280;
+  padding-left: 2rem;
+}
+#costumers .cards .card .card-texto {
+  display: flex;
+  align-items: start;
+  gap: 15px;
+}
+#costumers .cards .card .card-texto img {
+  padding-top: 2rem;
 }
 
 body {

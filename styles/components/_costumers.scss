@@ -1,0 +1,84 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+#costumers{
+    background-color: variaveis.$costumer-background-color;
+    background-image: url(../../assets/quote.svg);
+    background-repeat: no-repeat;
+    background-position: 6.5% 8%;  /* 6.5% à direita e 8% abaixo */
+    padding: 4.5rem 0;
+    .customers-texto{
+        @include mixins.margem-central(75%);
+        padding: 4rem 0;
+        display: flex;
+        flex-direction: column;
+        h1{
+            @include mixins.fw-fs-c(700, 3rem, variaveis.$cor-titulo);
+            width: 60%;
+            margin: 0;
+        }
+        h4{
+            @include mixins.fw-fs-c(500, 1.125rem, variaveis.$cor-titulo)
+        }
+    }
+    .cards{
+        @include mixins.margem-central(75%);
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+        .card-vertical{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            #airbnb{
+                width: 50%;
+            }
+            #strapi{
+                width: 40%;
+            }
+        }
+        .card{
+            box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            padding: 2.2rem;
+            .card-texto{
+                img{
+                    width: 30px;
+                }
+            }
+            img{
+                width: 100px;
+            }
+            h2{
+                @include mixins.fw-fs-c(500, 1.125rem, variaveis.$cor-titulo);
+                line-height: 28px;
+                margin: 0;
+                padding: 2rem 0;
+            }
+            h3{
+                margin: 0;
+                padding-left: 2rem;
+            }
+            h5{
+                margin: 0;
+                @include mixins.fw-fs-c(400, 0.875rem, variaveis.$cor-subtitulo);
+                padding-left: 2rem;
+                
+            }
+            .card-texto{
+                display: flex;
+                align-items: start;
+                gap: 15px;
+                img{
+                    padding-top: 2rem;
+                }
+            }
+        }
+    }
+}
