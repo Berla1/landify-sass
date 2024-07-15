@@ -284,6 +284,54 @@
   justify-content: center;
 }
 
+#mobile-ad {
+  background-color: #1DB5BE;
+}
+#mobile-ad .mobile-ad-content {
+  display: flex;
+  margin: 0 auto;
+  width: 85%;
+  gap: 12rem;
+}
+#mobile-ad .mobile-ad-content .mobile-ad-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 40%;
+}
+#mobile-ad .mobile-ad-content .mobile-ad-texto h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #111827;
+  margin: 0;
+}
+#mobile-ad .mobile-ad-content .mobile-ad-texto p {
+  width: 85%;
+  line-height: 28px;
+  padding-bottom: 1.5rem;
+}
+#mobile-ad .mobile-ad-content .mobile-ad-texto h4 {
+  margin: 0;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #111827;
+}
+#mobile-ad .mobile-ad-content .mobile-ad-texto .app-badges {
+  display: flex;
+  gap: 12px;
+}
+#mobile-ad .mobile-ad-content #mobile-ad-image img {
+  margin: 0 auto;
+  width: 80%;
+  width: 100%;
+}
+
+footer {
+  background-color: #000;
+}
+
 body {
   padding: 0;
   margin: 0;

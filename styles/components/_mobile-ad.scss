@@ -1,0 +1,44 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+#mobile-ad{
+    background-color: variaveis.$mobile-ad-background-color;
+    .mobile-ad-content{
+        display: flex;
+        @include mixins.margem-central(85%);
+        gap: 12rem;
+        .mobile-ad-texto{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            width: 40%;
+            h1{
+                @include mixins.fw-fs-c(700, 3rem, variaveis.$cor-titulo);
+                margin: 0;
+            }
+            p{
+                width: 85%;
+                line-height: 28px;
+                padding-bottom: 1.5rem;
+            }
+            h4{
+                margin: 0;
+                padding-bottom: 0.5rem;
+                @include mixins.fw-fs-c(500, 1.125rem, variaveis.$cor-titulo);
+            }
+    
+            .app-badges{
+                display: flex;
+                gap: 12px;
+            }
+    
+        }
+        #mobile-ad-image{
+            img{
+                @include mixins.margem-central(80%);
+                width: 100%;
+            }
+        }
+    }
+}
