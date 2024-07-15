@@ -330,6 +330,53 @@
 
 footer {
   background-color: #000;
+  padding: 5rem 0;
+}
+footer .footer-container {
+  display: flex;
+  margin: 0 auto;
+  width: 85%;
+  justify-content: space-between;
+}
+footer .footer-container .footer-content {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-container .footer-content img {
+  width: 30px;
+}
+footer .footer-container .footer-content .footer-texto {
+  color: #fff;
+  display: flex;
+  gap: 24px;
+}
+footer .footer-container .footer-content .footer-texto p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #fff;
+  margin: 0;
+  padding: 1rem 0;
+}
+footer .footer-container .footer-content .direitos h4 {
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: #D1D5DB;
+  margin: 0;
+}
+footer .footer-container .footer-get-the-app {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+footer .footer-container .footer-get-the-app img {
+  width: 150px;
+}
+footer .footer-container .footer-get-the-app h2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #D1D5DB;
 }
 
 body {

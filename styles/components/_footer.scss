@@ -3,4 +3,47 @@
 
 footer{
     background-color: #000;
+    padding: 5rem 0;
+    .footer-container{
+        display: flex;
+        @include mixins.margem-central(85%);
+        justify-content: space-between;
+        .footer-content{
+            display: flex;
+            img{
+                width: 30px;
+            }
+            display: flex;
+            flex-direction: column;
+            .footer-texto{
+                color: #fff;
+                display: flex;
+                gap: 24px;
+                p{
+                    @include mixins.fw-fs-c(400, 1rem, #fff);
+                    margin: 0;
+                    padding: 1rem 0;
+                }
+            }
+            .direitos{
+                h4{
+                    @include mixins.fw-fs-c(300, 0.875rem, variaveis.$cor-footer);
+                    margin: 0;
+                }
+            }
+        }
+        .footer-get-the-app{
+            
+            display: flex;
+            gap: 16px;
+            flex-direction: column;
+            img{
+                width: 150px;
+            }
+            h2{
+                margin: 0;
+                @include mixins.fw-fs-c(400, 1.125rem, variaveis.$cor-footer);
+            }
+        }
+    }
 }
