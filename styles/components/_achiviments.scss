@@ -1,0 +1,77 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+#achiviments{
+    padding: 5rem 0;
+    @include mixins.margem-central(85%);
+    .top-achiviments{
+        display: flex;
+        padding-bottom: 6rem;
+        .achiviments-texto{
+            h1{
+                @include mixins.fw-fs-c(700, 3rem, variaveis.$cor-titulo);
+                width: 70%;
+                margin: 0;
+            }
+            p{
+                @include mixins.fw-fs-c(400, 1.125rem, variaveis.$cor-titulo);
+            }
+        }
+        .stats-container{
+            display: flex;
+            flex-wrap: wrap;
+
+            .stats{
+                display: flex;
+                align-items: center;
+                width: 50%;
+                gap: 20px;
+                .stats-texto{
+                    h1{
+                        @include mixins.fw-fs-c(700, 2.25rem, variaveis.$cor-titulo);
+                        margin: 0;
+                    }
+                    p{
+                        @include mixins.fw-fs-c(400, 1rem, variaveis.$cor-titulo);
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-achiviments{
+        display: flex;
+        .achiviments-texto{
+            padding-top: 5rem;
+            h1{
+                @include mixins.fw-fs-c(700, 3rem, variaveis.$cor-titulo);
+                width: 70%;
+                margin: 0;
+            }
+            p{
+                @include mixins.fw-fs-c(400, 1.125rem, variaveis.$cor-titulo);
+                width: 75%;
+            }
+        }
+        .brand-icons{
+            padding: 3.4rem 3rem; /* meu deus que dificuldade posicionar isso*/
+            margin: 0 2rem;
+            background-image: url(../../assets/vector.svg);
+            background-position: 55% 75%;
+            background-repeat: no-repeat;
+            padding-top: 5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 64px;
+            .row1{
+                display: flex;
+                gap: 64px;
+            }
+            .row2{
+                @extend .row1;
+                justify-content: center;
+            }
+        }
+    }
+}

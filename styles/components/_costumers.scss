@@ -23,9 +23,8 @@
     }
     .cards{
         @include mixins.margem-central(75%);
-        padding: 1rem;
+        padding-left: 10rem;
         display: flex;
-        justify-content: space-between;
         align-items: center;
         gap: 32px;
         .card-vertical{

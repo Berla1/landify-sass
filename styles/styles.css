@@ -144,9 +144,8 @@
 #costumers .cards {
   margin: 0 auto;
   width: 75%;
-  padding: 1rem;
+  padding-left: 10rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 32px;
 }
@@ -202,6 +201,87 @@
 }
 #costumers .cards .card .card-texto img {
   padding-top: 2rem;
+}
+
+#achiviments {
+  padding: 5rem 0;
+  margin: 0 auto;
+  width: 85%;
+}
+#achiviments .top-achiviments {
+  display: flex;
+  padding-bottom: 6rem;
+}
+#achiviments .top-achiviments .achiviments-texto h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #111827;
+  width: 70%;
+  margin: 0;
+}
+#achiviments .top-achiviments .achiviments-texto p {
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #111827;
+}
+#achiviments .top-achiviments .stats-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+#achiviments .top-achiviments .stats-container .stats {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  gap: 20px;
+}
+#achiviments .top-achiviments .stats-container .stats .stats-texto h1 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: #111827;
+  margin: 0;
+}
+#achiviments .top-achiviments .stats-container .stats .stats-texto p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #111827;
+  margin: 0;
+}
+#achiviments .bottom-achiviments {
+  display: flex;
+}
+#achiviments .bottom-achiviments .achiviments-texto {
+  padding-top: 5rem;
+}
+#achiviments .bottom-achiviments .achiviments-texto h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #111827;
+  width: 70%;
+  margin: 0;
+}
+#achiviments .bottom-achiviments .achiviments-texto p {
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #111827;
+  width: 75%;
+}
+#achiviments .bottom-achiviments .brand-icons {
+  padding: 3.4rem 3rem; /* meu deus que dificuldade posicionar isso*/
+  margin: 0 2rem;
+  background-image: url(../../assets/vector.svg);
+  background-position: 55% 75%;
+  background-repeat: no-repeat;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+#achiviments .bottom-achiviments .brand-icons .row1, #achiviments .bottom-achiviments .brand-icons .row2 {
+  display: flex;
+  gap: 64px;
+}
+#achiviments .bottom-achiviments .brand-icons .row2 {
+  justify-content: center;
 }
 
 body {
