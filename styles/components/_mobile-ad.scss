@@ -36,9 +36,30 @@
         }
         #mobile-ad-image{
             display: flex;
-            img{
-                @include mixins.margem-central(80%);
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    #mobile-ad{
+        .mobile-ad-content{
+            flex-direction: column;
+            gap: 5rem;
+            .mobile-ad-texto{
+                width: 100%;
+                h1{
+                    @include mixins.fw-fs-c(700, 1.875rem, variaveis.$cor-titulo);
+                    padding-top: 2rem;
+                }
+                p{
+                    width: 100%;
+                    line-height: 28px;
+                    padding-bottom: 1.5rem;
+                }
             }
+        }
+        #mobile-ad-image{
+            flex-direction: column;
         }
     }
 }

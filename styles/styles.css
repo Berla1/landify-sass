@@ -510,11 +510,30 @@
 #mobile-ad .mobile-ad-content #mobile-ad-image {
   display: flex;
 }
-#mobile-ad .mobile-ad-content #mobile-ad-image img {
-  margin: 0 auto;
-  width: 80%;
-}
 
+@media (max-width: 400px) {
+  #mobile-ad .mobile-ad-content {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  #mobile-ad .mobile-ad-content .mobile-ad-texto {
+    width: 100%;
+  }
+  #mobile-ad .mobile-ad-content .mobile-ad-texto h1 {
+    font-weight: 700;
+    font-size: 1.875rem;
+    color: #111827;
+    padding-top: 2rem;
+  }
+  #mobile-ad .mobile-ad-content .mobile-ad-texto p {
+    width: 100%;
+    line-height: 28px;
+    padding-bottom: 1.5rem;
+  }
+  #mobile-ad #mobile-ad-image {
+    flex-direction: column;
+  }
+}
 footer {
   background-color: #000;
   padding: 5rem 0;
