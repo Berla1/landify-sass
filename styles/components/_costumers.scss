@@ -81,3 +81,36 @@
         }
     }
 }
+
+@media (max-width: 400px){
+    #costumers{
+        background-color: variaveis.$costumer-background-color;
+        background-image: url(../../assets/quote.svg);
+        background-repeat: no-repeat;
+        background-position: 6.5% 2.5%;  /* 6.5% à direita e 8% abaixo */
+        padding: 2.5rem 0;
+        .customers-texto{
+            @include mixins.margem-central(85%);
+            h1{
+                @include mixins.fw-fs-c(700, 1.875rem, variaveis.$cor-titulo);
+                width: 100%;
+            }
+        }
+        .cards{
+            @include mixins.margem-central(85%);
+            flex-direction: column;
+            padding: 0rem;
+            .card{
+                width: 80%;
+            }
+            .card-vertical{
+                #airbnb{
+                    width: 80%;
+                }
+                #strapi{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}

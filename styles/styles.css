@@ -291,6 +291,40 @@
   padding-top: 2rem;
 }
 
+@media (max-width: 400px) {
+  #costumers {
+    background-color: #D5FAFC;
+    background-image: url(../../assets/quote.svg);
+    background-repeat: no-repeat;
+    background-position: 6.5% 2.5%; /* 6.5% à direita e 8% abaixo */
+    padding: 2.5rem 0;
+  }
+  #costumers .customers-texto {
+    margin: 0 auto;
+    width: 85%;
+  }
+  #costumers .customers-texto h1 {
+    font-weight: 700;
+    font-size: 1.875rem;
+    color: #111827;
+    width: 100%;
+  }
+  #costumers .cards {
+    margin: 0 auto;
+    width: 85%;
+    flex-direction: column;
+    padding: 0rem;
+  }
+  #costumers .cards .card {
+    width: 80%;
+  }
+  #costumers .cards .card-vertical #airbnb {
+    width: 80%;
+  }
+  #costumers .cards .card-vertical #strapi {
+    width: 80%;
+  }
+}
 #achiviments {
   padding: 5rem 0;
   margin: 0 auto;
