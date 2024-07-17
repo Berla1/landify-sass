@@ -135,6 +135,7 @@
   }
 }
 #tailor-made {
+  text-align: center;
   margin: 0 auto;
   width: 85%;
 }
@@ -142,11 +143,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 #tailor-made .tailor-made-texto h1 {
   font-weight: 700;
   font-size: 3rem;
   color: #111827;
+  margin: 0;
+  padding-top: 5rem;
 }
 #tailor-made .tailor-made-texto p {
   font-weight: 400;
@@ -168,6 +172,37 @@
   width: 30%;
 }
 
+@media (max-width: 400px) {
+  #tailor-made .tailor-made-texto h1 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: #111827;
+  }
+  #tailor-made .tailor-made-texto p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #374151;
+    width: 100%;
+  }
+  #tailor-made .container-tailor-made {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  #tailor-made .container-tailor-made .tailor-made-itens {
+    width: 100%;
+  }
+  #tailor-made .container-tailor-made .tailor-made-itens h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #374151;
+  }
+  #tailor-made .container-tailor-made .tailor-made-itens p {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #374151;
+    width: 100%;
+  }
+}
 #costumers {
   background-color: #D5FAFC;
   background-image: url(../../assets/quote.svg);

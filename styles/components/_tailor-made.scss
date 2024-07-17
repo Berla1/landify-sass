@@ -2,13 +2,17 @@
 @use '../abstract/mixins';
 
 #tailor-made{
+    text-align: center;
     @include mixins.margem-central(85%);
     .tailor-made-texto{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         h1{
             @include mixins.fw-fs-c(700, 3rem, variaveis.$cor-titulo);
+            margin: 0;
+            padding-top: 5rem;
         }
         p{
             @include mixins.fw-fs-c(400, 1.125rem, variaveis.$cor-texto);
@@ -26,6 +30,34 @@
             flex-direction: column;
             align-items: center;
             width: 30%;
+        }
+    }
+}
+
+@media(max-width: 400px){
+    #tailor-made{
+        .tailor-made-texto{
+            h1{
+                @include mixins.fw-fs-c(700, 2.25rem, variaveis.$cor-titulo);
+            }
+            p{
+                @include mixins.fw-fs-c(400, 1.125rem, variaveis.$cor-texto);
+                width: 100%;
+            }
+        }
+        .container-tailor-made{
+            flex-wrap: nowrap;
+            flex-direction: column;
+            .tailor-made-itens{
+                width: 100%;
+                h1{
+                    @include mixins.fw-fs-c(700, 1.5rem, variaveis.$cor-texto);
+                }
+                p{
+                    @include mixins.fw-fs-c(400, 1rem, variaveis.$cor-texto);
+                    width: 100%;
+                }
+            }
         }
     }
 }
