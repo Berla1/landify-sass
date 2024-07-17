@@ -18,10 +18,37 @@
             list-style: none;
             gap: 16px;
         }
-            @include mixins.fw-fs-c(700, 1rem, variaveis.$cor-titulo);
-            #badges{
-                display: flex;
-                gap: 12px;
+        @include mixins.fw-fs-c(700, 1rem, variaveis.$cor-titulo);
+        #badges{
+            display: flex;
+            gap: 12px;
+        }
+        #menu-hambuguer{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 400px){
+    .background{
+        nav{
+            @include mixins.margem-central(100%);
+            ul{
+                li:nth-child(2),
+                li:nth-child(3),
+                li:nth-child(4),
+                li:nth-child(5){
+                    display: none;
+                }
             }
+            #badges{
+                display: none;
+            }
+            #menu-hambuguer{
+                display: flex;
+                padding: 1rem 1.5rem 0 0;
+                align-items: center;
+            }
+        }
     }
 }

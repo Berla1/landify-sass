@@ -27,7 +27,30 @@
   display: flex;
   gap: 12px;
 }
+.background nav #menu-hambuguer {
+  display: none;
+}
 
+@media (max-width: 400px) {
+  .background nav {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .background nav ul li:nth-child(2),
+  .background nav ul li:nth-child(3),
+  .background nav ul li:nth-child(4),
+  .background nav ul li:nth-child(5) {
+    display: none;
+  }
+  .background nav #badges {
+    display: none;
+  }
+  .background nav #menu-hambuguer {
+    display: flex;
+    padding: 1rem 1.5rem 0 0;
+    align-items: center;
+  }
+}
 #home {
   padding-top: 5rem;
   display: flex;
