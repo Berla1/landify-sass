@@ -36,3 +36,24 @@
         }
     }
 }
+
+@media (max-width: 400px){
+    #home{
+        padding-top: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        .texto-home{
+            padding-top: 4rem;
+            h1{
+                @include mixins.fw-fs-c(700, 2.25rem, variaveis.$cor-titulo);
+                width: 100%;
+                margin: 0
+            }
+            p{
+                @include mixins.fw-fs-c(400, 1.125rem, variaveis.$cor-texto);
+                width: 100%;
+            }
+        }
+    }
+}

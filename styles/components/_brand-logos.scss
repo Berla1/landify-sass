@@ -11,3 +11,12 @@
         align-items: center;
     }
 }
+
+@media (max-width: 400px){
+    #brand-logos{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
