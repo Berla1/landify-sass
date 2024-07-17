@@ -116,7 +116,7 @@
                     width: 100%;
                 }
                 p{
-                    @include mixins.fw-fs-c(400, 1.125rem, variaveis.$cor-titulo);
+                    @include mixins.fw-fs-c(400, 1rem, variaveis.$cor-titulo);
                     width: 100%;
                 }
             }

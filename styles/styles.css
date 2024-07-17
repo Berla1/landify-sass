@@ -450,7 +450,7 @@
   }
   #achiviments .bottom-achiviments .achiviments-texto p {
     font-weight: 400;
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: #111827;
     width: 100%;
   }
@@ -507,10 +507,12 @@
   display: flex;
   gap: 12px;
 }
+#mobile-ad .mobile-ad-content #mobile-ad-image {
+  display: flex;
+}
 #mobile-ad .mobile-ad-content #mobile-ad-image img {
   margin: 0 auto;
   width: 80%;
-  width: 100%;
 }
 
 footer {

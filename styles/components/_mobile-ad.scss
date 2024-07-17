@@ -35,9 +35,9 @@
     
         }
         #mobile-ad-image{
+            display: flex;
             img{
                 @include mixins.margem-central(80%);
-                width: 100%;
             }
         }
     }
