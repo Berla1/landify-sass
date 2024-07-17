@@ -585,6 +585,20 @@ footer .footer-container .footer-get-the-app h2 {
   color: #D1D5DB;
 }
 
+@media (max-width: 400px) {
+  footer {
+    padding: 2.5rem 0;
+  }
+  footer .footer-container {
+    flex-direction: column;
+  }
+  footer .footer-container .footer-texto {
+    flex-wrap: wrap;
+  }
+  footer .footer-container .direitos {
+    padding: 2rem 0;
+  }
+}
 body {
   padding: 0;
   margin: 0;

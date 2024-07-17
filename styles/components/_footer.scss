@@ -33,7 +33,6 @@ footer{
             }
         }
         .footer-get-the-app{
-            
             display: flex;
             gap: 16px;
             flex-direction: column;
@@ -43,6 +42,21 @@ footer{
             h2{
                 margin: 0;
                 @include mixins.fw-fs-c(400, 1.125rem, variaveis.$cor-footer);
+            }
+        }
+    }
+}
+
+@media (max-width: 400px){
+    footer{
+        padding: 2.5rem 0;
+        .footer-container{
+            flex-direction: column;
+            .footer-texto{
+                flex-wrap: wrap;
+            }
+            .direitos{
+                padding: 2rem 0;
             }
         }
     }
