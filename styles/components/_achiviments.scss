@@ -67,11 +67,75 @@
             .row1{
                 display: flex;
                 gap: 64px;
+                justify-content: center;
             }
             .row2{
                 @extend .row1;
-                justify-content: center;
             }
         }
     }
+}
+
+@media (max-width: 400px){
+    #achiviments{
+        .top-achiviments{
+            flex-direction: column;
+            padding-bottom: 2rem;
+            .achiviments-texto{
+                h1{
+                    @include mixins.fw-fs-c(700, 1.875rem, variaveis.$cor-titulo);
+                    width: 80%;
+                }
+                p{
+                    @include mixins.fw-fs-c(400, 1.125rem, variaveis.$cor-titulo);
+                }
+            }
+            .stats-container{
+                flex-direction: column;
+                gap: 20px;
+                .stats{
+                    width: 100%;
+                    .stats-texto{
+                        h1{
+                            @include mixins.fw-fs-c(700, 1.5rem, variaveis.$cor-titulo);
+                        }
+                        p{
+                            @include mixins.fw-fs-c(400, 0.875rem, variaveis.$cor-titulo);
+
+                        }
+                    }
+                }
+            }
+        }
+        .bottom-achiviments{
+            flex-direction: column;
+            .achiviments-texto{
+                padding-top: 5rem;
+                h1{
+                    @include mixins.fw-fs-c(700, 1.875rem, variaveis.$cor-titulo);
+                    width: 100%;
+                }
+                p{
+                    @include mixins.fw-fs-c(400, 1.125rem, variaveis.$cor-titulo);
+                    width: 100%;
+                }
+            }
+            .brand-icons{
+                padding: 2rem 0;
+                background-color: #EDE9FE;
+                border-radius: 0 0 999px 999px;
+                margin: 0;
+                background-image: none;
+                gap: 40px;
+                .row1{
+                    gap: 30px;
+                    img{
+                        width: 45px;
+                    }
+                }
+                
+            }
+        }
+    }
+
 }

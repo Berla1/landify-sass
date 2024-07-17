@@ -401,11 +401,74 @@
 #achiviments .bottom-achiviments .brand-icons .row1, #achiviments .bottom-achiviments .brand-icons .row2 {
   display: flex;
   gap: 64px;
-}
-#achiviments .bottom-achiviments .brand-icons .row2 {
   justify-content: center;
 }
-
+@media (max-width: 400px) {
+  #achiviments .top-achiviments {
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+  #achiviments .top-achiviments .achiviments-texto h1 {
+    font-weight: 700;
+    font-size: 1.875rem;
+    color: #111827;
+    width: 80%;
+  }
+  #achiviments .top-achiviments .achiviments-texto p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #111827;
+  }
+  #achiviments .top-achiviments .stats-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #achiviments .top-achiviments .stats-container .stats {
+    width: 100%;
+  }
+  #achiviments .top-achiviments .stats-container .stats .stats-texto h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #111827;
+  }
+  #achiviments .top-achiviments .stats-container .stats .stats-texto p {
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: #111827;
+  }
+  #achiviments .bottom-achiviments {
+    flex-direction: column;
+  }
+  #achiviments .bottom-achiviments .achiviments-texto {
+    padding-top: 5rem;
+  }
+  #achiviments .bottom-achiviments .achiviments-texto h1 {
+    font-weight: 700;
+    font-size: 1.875rem;
+    color: #111827;
+    width: 100%;
+  }
+  #achiviments .bottom-achiviments .achiviments-texto p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #111827;
+    width: 100%;
+  }
+  #achiviments .bottom-achiviments .brand-icons {
+    padding: 2rem 0;
+    background-color: #EDE9FE;
+    border-radius: 0 0 999px 999px;
+    margin: 0;
+    background-image: none;
+    gap: 40px;
+  }
+  #achiviments .bottom-achiviments .brand-icons .row1, #achiviments .bottom-achiviments .brand-icons .row2 {
+    gap: 30px;
+  }
+  #achiviments .bottom-achiviments .brand-icons .row1 img, #achiviments .bottom-achiviments .brand-icons .row2 img {
+    width: 45px;
+  }
+}
 #mobile-ad {
   background-color: #1DB5BE;
 }
