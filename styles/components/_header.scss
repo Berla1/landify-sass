@@ -22,6 +22,10 @@
         #badges{
             display: flex;
             gap: 12px;
+            
+            img{
+                width: 150px;
+            }
         }
         #menu-hambuguer{
             display: none;

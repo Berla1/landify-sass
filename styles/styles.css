@@ -27,6 +27,9 @@
   display: flex;
   gap: 12px;
 }
+.background nav #badges img {
+  width: 150px;
+}
 .background nav #menu-hambuguer {
   display: none;
 }
